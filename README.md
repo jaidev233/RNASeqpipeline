@@ -33,7 +33,7 @@ conda install -c bioconda fastp hisat2 samtools trimmomatic fastqc subread multi
 
 ### 2. Run the Script
 ```bash
-bash RNASeqpipeline_x.sh
+bash RNASeqpipeline.sh
 ```
 Follow on-screen prompts to:
 - Set up dependencies
