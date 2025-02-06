@@ -3,6 +3,8 @@
 #time the script
 start_time=`date +%s`
 
+#!/bin/bash
+
 # Display copyright information with ASCII art
 echo "########################################"
 echo "#                                      #"
@@ -14,7 +16,6 @@ echo "  Copyright © 2025 Jaidev.              "
 echo "  Licensed under CC BY-NC 4.0.          "
 echo ""
 echo "########################################"
-
 
 echo '         ___'
 echo '       _(((,|			How do I analyze RNA-seq data?'
@@ -152,20 +153,20 @@ read -p "Enter your choice (1-6, default is 2): " user_input
 user_input=${user_input:-2}  # Default to 2 if no input is provided
 
 # Predefined default paths for each organism
-default_human_index="/storage/vibhor/Phds/jaidev/index/hisat2/hg38/grch38"
-default_rattus_index="/storage/vibhor/Phds/jaidev/index/hisat2/rn6"
-default_mus_index="/storage/vibhor/Phds/jaidev/index/hisat2/grcm38"
-default_drosophila_index="/storage/vibhor/Phds/jaidev/index/hisat2/dm6"
-default_celegans_index="/storage/vibhor/Phds/jaidev/index/hisat2/celegans"
-default_scer_index="/storage/vibhor/Phds/jaidev/index/hisat2/scer"
+default_human_index="your_path_to/index/hisat2/hg38/grch38"
+default_rattus_index="your_path_to/index/hisat2/rn6"
+default_mus_index="your_path_to/index/hisat2/grcm38"
+default_drosophila_index="your_path_to/index/hisat2/dm6"
+default_celegans_index="your_path_to/index/hisat2/celegans"
+default_scer_index="your_path_to/index/hisat2/scer"
 
 # Define default paths for each organism
-default_human_gtf="/storage/vibhor/Phds/jaidev/index/hisat2/genome_annotation/human/Homo_sapiens.GRCh38.108.gtf"
-default_rattus_gtf="/storage/vibhor/Phds/jaidev/index/hisat2/genome_annotation/rattus_norvegicus/Rattus_norvegicus.mRatBN7.2.108.chr.gtf"
-default_mus_gtf="/storage/vibhor/Phds/jaidev/index/hisat2/genome_annotation/mus_musculus/Mus_musculus.GRCm39.109.gtf"
-default_drosophila_gtf="/storage/vibhor/Phds/jaidev/index/hisat2/genome_annotation/drosophila_melanogaster/Drosophila_melanogaster.BDGP6.32.109.gtf"
-default_celegans_gtf="/storage/vibhor/Phds/jaidev/index/hisat2/genome_annotation/caenorhabditis_elegans/Caenorhabditis_elegans.WBcel235.109.gtf"
-default_scerevisiae_gtf="/storage/vibhor/Phds/jaidev/index/hisat2/genome_annotation/saccharomyces_cerevisiae/Saccharomyces_cerevisiae.R64-1-1.109.gtf"
+default_human_gtf="your_path_to/human/Homo_sapiens.GRCh38.108.gtf"
+default_rattus_gtf="your_path_to/rattus_norvegicus/Rattus_norvegicus.mRatBN7.2.108.chr.gtf"
+default_mus_gtf="your_path_to/mus_musculus/Mus_musculus.GRCm39.109.gtf"
+default_drosophila_gtf="your_path_to/drosophila_melanogaster/Drosophila_melanogaster.BDGP6.32.109.gtf"
+default_celegans_gtf="your_path_to/caenorhabditis_elegans/Caenorhabditis_elegans.WBcel235.109.gtf"
+default_scerevisiae_gtf="your_path_to/saccharomyces_cerevisiae/Saccharomyces_cerevisiae.R64-1-1.109.gtf"
 
 # Set default paths based on organism selection
 case $user_input in
