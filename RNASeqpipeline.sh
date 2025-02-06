@@ -3,6 +3,19 @@
 #time the script
 start_time=`date +%s`
 
+# Display copyright information with ASCII art
+echo "########################################"
+echo "#                                      #"
+echo "#  C O P Y R I G H T   N O T I C E    #"
+echo "#                                      #"
+echo "########################################"
+echo ""
+echo "  Copyright © 2025 Jaidev.              "
+echo "  Licensed under CC BY-NC 4.0.          "
+echo ""
+echo "########################################"
+
+
 echo '         ___'
 echo '       _(((,|			How do I analyze RNA-seq data?'
 echo '      /  _-\\'
